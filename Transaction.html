@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Saisie d'une transaction</h2>
+    <form action="./Transaction.php" method="get" onsubmit="return Confirmer()">
+        <label for="date">date de la transaction: </label>
+        <input type="text" name="date" id="date"><br>
+        <label for="numero">numero du compte: </label>
+        <input type="text" name="numero" id="numero"><br>
+        <label for="libelle">libelle de la transaction: </label>
+        <input type="text" name="libelle" id="libelle"><br>
+        <label for="montant">montant de la transaction: </label>
+        <input type="text" name="montant" id="montant"><br>
+        <input type="submit" value="Confirmer">
+        <input type="reset" value="Annuler">
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
